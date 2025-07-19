@@ -13,10 +13,7 @@ const app = express();
 const PORT = process.env['PORT'] || 3001;
 
 // CORS配置
-app.use(cors({
-  origin: 'http://localhost:3000',
-  credentials: true
-}));
+app.use(cors({ origin: '*', credentials: true }));
 
 // 解析JSON请求体
 app.use(express.json());
