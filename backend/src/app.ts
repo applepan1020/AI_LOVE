@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { connectDatabase } from './config/database';
 import userRoutes from './routes/userRoutes';
+import testRoutes from './routes/testRoutes';
 
 // 加载环境变量
 dotenv.config();
@@ -48,6 +49,9 @@ app.get('/api/v1', (_req, res) => {
 // 用户管理路由
 app.use('/api/v1/users', userRoutes);
 
+// 测试系统路由
+app.use('/api/v1/tests', testRoutes);
+
 // 测试接口
 app.get('/test', (_req, res) => {
   res.json({
@@ -79,6 +83,7 @@ const startServer = async () => {
       console.log(`📊 健康检查: http://localhost:${PORT}/health`);
       console.log(`🧪 测试接口: http://localhost:${PORT}/test`);
       console.log(`👤 用户API: http://localhost:${PORT}/api/v1/users`);
+      console.log(`🧪 测试API: http://localhost:${PORT}/api/v1/tests`);
       console.log(`🗄️ 数据库: MongoDB Atlas 已连接`);
     });
   } catch (error) {
