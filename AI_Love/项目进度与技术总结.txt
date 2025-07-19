@@ -1,0 +1,49 @@
+项目名称：AI 恋爱/婚姻契合度预测网站
+
+一、项目想法
+这是一个在网页上运行的程序，用户可以输入信息，AI 会预测恋爱或婚姻的契合度。目标是做一个现代、易用、有趣的 Web 网站。
+
+二、推荐技术方案
+1. 前端：Next.js（基于 React 的现代网页开发框架）
+2. 后端：FastAPI（用 Python 实现 AI 推理和 API 服务）
+3. 前端脚手架：npx create-next-app@latest
+4. 后端脚手架：cookiecutter https://github.com/tiangolo/full-stack-fastapi-postgresql
+
+三、目前已完成的操作步骤
+1. 安装了 Node.js（用于前端开发）
+2. 用命令行进入了项目文件夹：C:\Users\潘红果\Desktop\cursor\AI_Love
+3. 运行 npx create-next-app@latest 创建了前端项目（原名 my-app，已改名为 frontend）
+
+四、下一步计划
+- 进入 frontend 文件夹，启动前端开发服务器，预览网页效果
+- 后续会继续搭建后端 AI 服务
+
+五、温馨提示
+- 如果关闭了 Cursor 编辑器，聊天记录可能不会自动保存。建议将本文件内容保存好，方便随时查阅。
+
+如有问题，随时可以继续提问！ 
+AI_Love/
+├── frontend/                    # 前端代码 (Next.js + TypeScript)
+│   ├── app/
+│   │   ├── homepage/           # 首页相关代码
+│   │   │   ├── sections/       # 首页各区块组件
+│   │   │   │   ├── Banner.tsx      # 产品定位与核心价值
+│   │   │   │   ├── FeatureCards.tsx # 核心功能入口
+│   │   │   │   ├── CTA.tsx         # 用户引导与行动号召
+│   │   │   │   ├── Highlights.tsx  # 产品亮点与信任感
+│   │   │   │   └── Footer.tsx      # 页脚
+│   │   │   ├── Homepage.tsx    # 首页主组件
+│   │   │   └── README.md       # 首页设计文档
+│   │   ├── page.tsx           # Next.js 根路由
+│   │   ├── layout.tsx         # 全局布局
+│   │   └── globals.css        # 全局样式
+│   ├── product.md             # 产品规划文档
+│   ├── design.md              # 设计文档
+│   └── README.md              # 项目说明
+├── backend/                   # 后端代码目录
+│   ├── design.md              # 后端设计文档 (待完善)
+│   ├── product.md             # 后端产品规划 (待完善)
+│   └── README.md              # 后端说明 (待完善)
+└── AI_Love/项目进度与技术总结.txt
+
+https://github.com/applepan1020/AI_LOVE.git
